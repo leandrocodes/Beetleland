@@ -1,0 +1,25 @@
+{
+  "name": "beetleland",
+  "version": "1.0.0",
+  "description": "Beetleland",
+  "main": "index.js",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandropx/Beetleland.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandropx/Beetleland/issues"
+  },
+  "homepage": "https://github.com/leandropx/Beetleland#readme",
+  "devDependencies": {
+    "bulma": "^0.7.4",
+    "node-sass": "^4.11.0"
+  }
+}
