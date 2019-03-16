@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Sniglet");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 body {
   overflow: hidden; }
 
@@ -17,7 +17,7 @@ body {
   display: inline; }
 
 .title {
-  font-family: "Sniglet", cursive;
+  font-family: 'Raleway', sans-serif;
   text-transform: capitalize; }
 
 #a {
