@@ -17,8 +17,32 @@ body {
   display: inline; }
 
 .title {
-  font-family: 'Sniglet', cursive;
+  font-family: "Sniglet", cursive;
   text-transform: capitalize; }
+
+#a {
+  grid-area: a; }
+
+#b {
+  grid-area: b; }
+
+#c {
+  grid-area: c; }
+
+#d {
+  grid-area: d; }
+
+#e {
+  grid-area: e; }
+
+#grid {
+  display: grid;
+  grid-template-areas: "a a a a" "b c d e";
+  grid-row-gap: 1rem; }
+
+@media (max-width: 512px) {
+  #grid {
+    grid-template-areas: "a a a" "b c d" "e e e"; } }
 
 /*! bulma.io v0.7.4 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {

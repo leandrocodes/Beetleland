@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=Sniglet');
+@import url("https://fonts.googleapis.com/css?family=Sniglet");
 
-body{
-      overflow: hidden;
+body {
+  overflow: hidden;
 }
 
 .hero {
@@ -21,16 +21,46 @@ body{
     background: black url(../img/bg3.jpg) center 0.02em / cover;
   }
 }
-.desktop{
-      p{
-            display: inline;
-      }
+.desktop {
+  p {
+    display: inline;
+  }
 }
-.title{
-  font-family: 'Sniglet', cursive;
+.title {
+  font-family: "Sniglet", cursive;
   text-transform: capitalize;
-
+}
+#a {
+  grid-area: a;
+}
+#b {
+  grid-area: b;
+}
+#c {
+  grid-area: c;
+}
+#d {
+  grid-area: d;
+}
+#e {
+  grid-area: e;
 }
 
-@import "../node_modules/bulma/bulma.sass";
+#grid {
+  display: grid;
+  grid-template-areas:
+    "a a a a"
+    "b c d e";
 
+  grid-row-gap: 1rem;
+}
+
+@media (max-width: 512px) {
+  #grid {
+    grid-template-areas:
+      "a a a"
+      "b c d"
+      "e e e";
+  }
+}
+@import "../node_modules/bulma/bulma.sass";
